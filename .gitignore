@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+myenv/
+dist/
+build/
+*.spec
+logs/
+# We usually don't push the scrcpy folder (it's large binary files)
+scrcpy-win64-v3.3.1/ 
+# Ignore large video files
+*.mp4
+*.MOV
+*.avi
+GUI.py
