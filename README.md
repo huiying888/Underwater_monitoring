@@ -60,7 +60,7 @@ To use the live feed feature, you must enable USB Debugging:
 4. Enable USB Debugging.
 5. Connect your phone to the PC via USB.
 6. On your phone screen, a popup will appear asking to "Allow USB Debugging?". Check "Always allow" and tap Allow.
-
+7. Watch this [[video](https://youtu.be/2C2hZT3bpBo?si=ReXDt0Cks5vvjJkb))] for clarification.
 
 ---
 ## ⚙️ Configuration & ROI Calibration
