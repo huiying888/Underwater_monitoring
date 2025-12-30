@@ -39,5 +39,13 @@ To use this system effectively, you need:
 ```bash
 git clone [[https://github.com/huiying888/Underwater_Monitoring.git](https://github.com/huiying888/Underwater_monitoring.git)]
 cd Underwater_Monitoring
+```
 
-
+### 2. Install Python Dependencies
+It is recommended to use a virtual environment.
+```bash
+pip install -r requirements.txt
+```
+### 3. Setup Scrcpy (For Live Phone Feed)
+1. Download the latest Scrcpy release for Windows from [[here](https://github.com/Genymobile/scrcpy/releases)].
+2. Extract the downloaded zip file into C Drive
