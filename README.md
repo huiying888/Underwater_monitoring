@@ -37,7 +37,7 @@ To use this system effectively, you need:
 
 ### 1. Clone the Repository
 ```bash
-git clone [[https://github.com/huiying888/Underwater_Monitoring.git](https://github.com/huiying888/Underwater_monitoring.git)]
+git clone https://github.com/huiying888/Underwater_monitoring.git
 cd Underwater_Monitoring
 ```
 
