@@ -50,7 +50,7 @@ pip install -r requirements.txt
 ### 3. Setup Scrcpy (For Live Phone Feed)
 1. Download the latest Scrcpy release for Windows from [[here](https://github.com/Genymobile/scrcpy/releases)].
 2. Extract the downloaded zip file into C Drive
-3. Important: Rename the extracted folder to scrcpy-win64-v3.3.1 (or update config.py to match).
+3. Important: Rename the extracted folder to scrcpy-win64-v3.3.1 (or update `config.py` to match).
 
 ### 4. Setup Your Android Phone
 To use the live feed feature, you must enable USB Debugging:
@@ -60,7 +60,7 @@ To use the live feed feature, you must enable USB Debugging:
 4. Enable USB Debugging.
 5. Connect your phone to the PC via USB.
 6. On your phone screen, a popup will appear asking to "Allow USB Debugging?". Check "Always allow" and tap Allow.
-7. Watch this [[video](https://youtu.be/2C2hZT3bpBo?si=ReXDt0Cks5vvjJkb))] for clarification.
+7. Watch this [[video](https://youtu.be/2C2hZT3bpBo?si=ReXDt0Cks5vvjJkb)] for clarification.
 
 ---
 ## ⚙️ Configuration & ROI Calibration
