@@ -63,6 +63,42 @@ To use the live feed feature, you must enable USB Debugging:
 
 
 ---
+## ⚙️ Configuration & ROI Calibration
+
+Important: The Optical Character Recognition (OCR) is tuned for a specific screen resolution. If the "Depth" reading says Unknown or returns wrong numbers, you likely need to adjust the Region of Interest (ROI) coordinates.
+
+### 1. Calibrate for Phone (Live Feed)
+The system includes a debug mode to let you see exactly what the AI is "seeing".
+1. Connect your phone (ensure USB debugging is on).
+2. Run the backend test script:
+```bash
+python detection_backend.py
+```
+3. A window named "Live Phone ROI" will pop up showing the cropped area.
+*If you see the depth numbers: The calibration is correct.
+*If you see the battery icon/clock: The box is too high. Increase top.
+*If the box is black/empty: The box is too low. Decrease top.
+
+4.To Fix: Open detection_backend.py and adjust the coordinates in the _extract_depth function (approx. line 95):
+```bash
+else:
+    left = 0
+    top = 60       # <--- ADJUST THIS VALUE (y-axis start)
+    width = int(w * 0.30)
+    height = 53    # <--- ADJUST THIS VALUE (box height)
+```
+### 2. Calibrate for Video Files
+If you are analyzing video files and the depth is missing:
+1. Open `test_ocr.py`.
+2. Edit the bottom line to point to your video file:
+```bash
+test_depth_view(r'C:\path\to\your\video.mp4')
+```
+3. Run python `test_ocr.py`.
+4. Adjust the left, top, right, bottom variables in test_ocr.py until the white numbers are clearly visible in the popup window.
+5. Copy those new values into the `if self.running_source == "video":` section of `detection_backend.py`.
+   
+---
 ## 🖥️ How to Use
 
 ### 1. Prepare the Sonar
