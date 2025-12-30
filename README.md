@@ -4,6 +4,9 @@ A real-time computer vision application designed for underwater monitoring. This
 
 It supports both **Video File analysis** and **Live Phone Streaming** via USB (using scrcpy).
 
+**⚠️ Hardware Note:** This system is specifically calibrated for the **Erchang F68 Fish Finder** interface.
+
+
 ## 🚀 Features
 * **Dual Detection Modes:** Switch between Asset Detection (YOLO) and Fish Counting (Regression).
 * **Live Telemetry:** Automated reading of Sonar Depth (OCR) and Phone GPS Geolocation.
@@ -13,12 +16,20 @@ It supports both **Video File analysis** and **Live Phone Streaming** via USB (u
 
 ---
 
-## 🛠️ Prerequisites
+## 🛠️ Prerequisites & Hardware
 
-Before installing, ensure you have:
-1.  **Python 3.9+** installed.
-2.  **Android Phone** with Developer Options enabled.
-3.  **USB Cable** for data transfer.
+To use this system effectively, you need:
+
+### 1. Hardware
+* **Erchang F68 Fish Finder** (Sonar Device).
+* **Android Phone** (to run the Erchang companion app).
+* **USB Cable** (to connect the phone to the PC).
+* **PC/Laptop** with Python 3.9+ installed.
+
+### 2. Software Dependencies
+* **Python 3.9+**
+* **Erchang Fish Finder App** installed on your Android phone.
+* **USB Debugging** enabled on the Android phone.
 
 ---
 
@@ -26,5 +37,7 @@ Before installing, ensure you have:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/Underwater-Detection.git](https://github.com/YOUR_USERNAME/Underwater-Detection.git)
-cd Underwater-Detection
+git clone [[https://github.com/huiying888/Underwater_Monitoring.git](https://github.com/huiying888/Underwater_monitoring.git)]
+cd Underwater_Monitoring
+
+
