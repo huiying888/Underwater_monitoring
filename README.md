@@ -43,6 +43,22 @@ cd Underwater_Monitoring
 
 ### 2. Install Python Dependencies
 It is recommended to use a virtual environment.
+1. Create the virtual environment:
+Open your terminal in the project folder and run:
+```bash
+python -m venv venv
+```
+2. Activate the environment:
+* Windows (PowerShell):
+```bash
+.\venv\Scripts\Activate
+```
+(Note: If you get a permission error, run Set-ExecutionPolicy Unrestricted -Scope Process first)
+* Windows (Command Prompt):
+```bash
+venv\Scripts\activate
+```
+3. Install the libraries: Once activated (you will see (venv) at the start of your command line), run:
 ```bash
 pip install -r requirements.txt
 ```
