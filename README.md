@@ -38,7 +38,7 @@ To use this system effectively, you need:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/huiying888/Underwater_monitoring.git
-cd Underwater_Monitoring
+cd Underwater_monitoring
 ```
 
 ### 2. Install Python Dependencies
